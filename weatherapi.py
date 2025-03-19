@@ -2,7 +2,7 @@ from pgeocode import Nominatim
 from json import loads
 from requests import get
 import tkinter as tk
-from tkinter import filedialog, ttk
+from tkinter import filedialog
 from PIL import ImageTk, Image
 import pycountry as pc
 
@@ -137,11 +137,11 @@ def submit(save_indicator):
         return daytemp, nighttemp, countnum, citystate
 
 
-entryimage = ImageTk.PhotoImage(Image.open("thunderstorm-700x400.jpg"))
-validimage = ImageTk.PhotoImage(Image.open("warmest-places-in-europe-winter-800-450.1575908676.webp"))
+entryimage = ImageTk.PhotoImage(Image.open("images/thunderstorm.jpg"))
+validimage = ImageTk.PhotoImage(Image.open("images/europewinter.webp"))
 invalidimage = ImageTk.PhotoImage(Image.open
-("foggy-day-in-the-park-surrounding-leeds-castle-kent-england-united-kingdom-europe-RHPLF19928.jpg"))
-completeimage = ImageTk.PhotoImage(Image.open("shutterstock_134874083-768x512.jpg"))
+("images/foggy.jpg"))
+completeimage = ImageTk.PhotoImage(Image.open("images/shutterstock.jpg"))
 
 window.title("Entry Window")
 window.geometry("800x600")
